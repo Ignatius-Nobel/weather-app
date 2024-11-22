@@ -1,6 +1,6 @@
 @font-face {
     font-family: Poppins;
-    src: url('weather-app\font\Poppins-Regular.ttf');
+    src: url(./font/Poppins-Regular.ttf)
   }
 
 *{
@@ -53,10 +53,12 @@ body{
   width: 60px;
   height: 60px;
   cursor: pointer;
+  align-content: center;
+  justify-items: center;
 }
 
-.search ion-icon{
-  font-size: 20px;
+.search-icon{
+  width: 24px;
 }
 
 .weather-icon{
@@ -93,4 +95,20 @@ body{
 .humidity, .wind{
   font-size: 28px;
   margin-top: -6px;
+}
+.weather{
+  display: none;
+}
+
+.error{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  display: none;
+}
+
+.feels-like{
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
